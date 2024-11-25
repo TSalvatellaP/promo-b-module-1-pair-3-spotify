@@ -1,3 +1,16 @@
-header {
+.header {
     background-color: black;
+
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+.menu{
+    display: none;
+}
+
+.logo{
+    width: 40px;
 }
