@@ -7,6 +7,30 @@
 @import 'layout/footer';
 @import 'pages/index';*/
 
-body{
-    background-color: beige;
+.header {
+    background-color: black;
+    display:flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    left: 0;
+
+}
+
+/*.nav{
+    display:flex;
+    justify-content: space-between;
+}
+    */
+.menu{
+    display: none;
+}
+
+.logo1{
+    width: 40%;
+ 
+}
+
+.logo2{
+    width: 50px;
 }
