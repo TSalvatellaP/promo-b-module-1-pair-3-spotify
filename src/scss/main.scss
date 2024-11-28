@@ -7,30 +7,10 @@
 @import 'layout/footer';
 @import 'pages/index';*/
 
-.header {
-    background-color: black;
-    display:flex;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    left: 0;
+@import 'core/reset';
+@import 'layout/header';
+@import 'layout/seccion-blue';
+@import 'layout/seccion-white';
 
-}
 
-/*.nav{
-    display:flex;
-    justify-content: space-between;
-}
-    */
-.menu{
-    display: none;
-}
 
-.logo1{
-    width: 40%;
- 
-}
-
-.logo2{
-    width: 50px;
-}
