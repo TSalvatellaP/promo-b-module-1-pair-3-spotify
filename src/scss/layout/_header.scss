@@ -1,5 +1,7 @@
 .header {
-
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     background-color: black;
     position: sticky;
     top: 0;
@@ -8,10 +10,10 @@
 
 .nav{
     display: flex;
-    flex-direction: row;
-    justify-content: space-around;
- 
+    
+    
 }
+
     
 .menu{
     display: none;
