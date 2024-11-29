@@ -1,19 +1,31 @@
 
 
 .grid{
-    font-weight: bold;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 60vh;
+    margin: 15px;
+    background-color: white;
     color: black;
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr;
+    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
     gap: 15px;
-    justify-items: center;
+    
+    
 
 }
 
 .article{
     display: flex;
     flex-direction: row-reverse;
+    justify-content: left;
+    align-items: center;
+    gap: 10px;
+    
+    
+}
+
+.icono{
+    width: 80px;
+    
     
 }

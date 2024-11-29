@@ -11,6 +11,24 @@
 @import 'layout/header';
 @import 'layout/seccion-blue';
 @import 'layout/seccion-white';
+:root{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    h1{
+        font-size: xxx-large;
+    }
+    h2{
+        font-size: xx-large;
+    }
+    h3{
+        font-size: x-large;
+    }
+    h4{
+        font-size: large;
+    }
+    p{
+        font-size: medium
+    };
+}
 
 
 
