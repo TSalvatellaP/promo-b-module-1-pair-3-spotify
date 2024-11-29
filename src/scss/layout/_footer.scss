@@ -1,0 +1,32 @@
+footer{
+    background-color: black;
+    color: white;
+    margin: 10px color black;
+    height: 15vh;
+    display: flex;
+    flex-direction: row;
+    position: static;
+    gap: 100px;
+
+}
+
+.menu-footer{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    
+
+}
+
+.copy{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    text-align: center;
+
+}
+.logo-sp{
+    height: 20%;
+}
