@@ -10,33 +10,34 @@
 }
 .nav{
     height: 100%;
-    
-    
-    
-}
+ }
 .menu{
     display: none;
 }
 
 .logo1{
     height: 90%;
-    
- 
+
 }
 .logo2{
   
     height: 90%;
 }
-@media (width>600px){
+@media (width>480px){
     .menu{
+        height: 90%;
         display: flex;
-        color: rosybrown;
-        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 20px;
+        
         
     }
-
     .logo2{
         display: none;
     }
-
+    .header{
+        height: 60px;
+    }
 }
