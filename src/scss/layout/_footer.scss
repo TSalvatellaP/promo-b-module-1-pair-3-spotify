@@ -1,12 +1,13 @@
 footer{
-    background-color: black;
-    color: white;
-    margin: 10px color black;
+    background-color: $color-primary;
+    color: $color-secondary;
+    margin: 10px color $color-primary;
     height: 15vh;
     display: flex;
     flex-direction: row;
     position: static;
     gap: 100px;
+    font-family: $font-main;
 
 }
 

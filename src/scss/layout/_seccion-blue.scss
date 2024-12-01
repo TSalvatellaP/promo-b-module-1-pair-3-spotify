@@ -1,6 +1,6 @@
 
 .container{
-    background-color: #519cf0;
+    background-color: $color-bg;
     height: 60vh;
     display: flex;
     flex-direction: column;
@@ -9,8 +9,9 @@
     text-align: left;
     padding: 15px;
     gap: 5px;
+    font-family: $font-main;
     font-weight: bold;
-    color: white;
+    color: $color-secondary;
    
 
 }
@@ -23,7 +24,7 @@
     justify-content: center;
     align-items: center;
     padding: 10px;
-    background-color: #28b65f;
+    background-color: $color-buttom;
     width: 100%;
     height: 50px;
     border-radius: 25px;
@@ -31,21 +32,24 @@
    }
 
   .text-button{
+    font-family: $font-main;
     text-decoration: none;
-    color: white;
+    color: $color-secondary;
   
   }
 
 @media (width>480px){
-    .container{
-      z-index: 200;
-      
-    }
+   
     .button{
       width: 25%;
     
     }
-   
+   .image-dancer{
+    background-image: url('/public/images/premium_dancer.png');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+   }
    
     
 }

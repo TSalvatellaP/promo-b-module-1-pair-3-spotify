@@ -7,13 +7,16 @@
 @import 'layout/footer';
 @import 'pages/index';*/
 
+@import 'core/variables';
 @import 'core/reset';
 @import 'layout/header';
 @import 'layout/seccion-blue';
 @import 'layout/seccion-white';
 @import 'layout/footer';
+
+
+
 :root{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     line-height: 1.25;
     
     h1{
@@ -34,10 +37,4 @@
     p{
         font-size: 16px;
     }
-    
 }
-
-
-
-
-

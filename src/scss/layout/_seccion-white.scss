@@ -2,12 +2,13 @@
 
 .grid{
     margin: 15px;
-    background-color: white;
-    color: black;
+    background-color: $color-secondary;
+    color: $color-primary;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
     gap: 15px;
+    font-family: $font-main;
     
 }
 
