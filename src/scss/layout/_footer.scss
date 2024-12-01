@@ -6,17 +6,24 @@ footer{
     display: flex;
     flex-direction: row;
     position: static;
-    gap: 100px;
-    font-family: $font-main;
+    justify-content: space-between;
+    @include text_funcions ();
 
 }
 
 .menu-footer{
+    height: 90%;
+    width: 100%;
     padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    @media (width>480px){
+        flex-direction: row;
+        align-items: flex-end;
+        gap: 15px;
     
+    }
 
 }
 
@@ -26,7 +33,9 @@ footer{
     flex-direction: column;
     justify-content: flex-start;
     text-align: center;
-
+    @media (width>480px){
+        justify-content: center;
+    }
 }
 .logo-sp{
     height: 20%;

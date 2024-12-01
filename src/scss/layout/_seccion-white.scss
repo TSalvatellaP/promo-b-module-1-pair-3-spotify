@@ -1,15 +1,33 @@
-
-
-.grid{
+.section-white{
     margin: 15px;
+    height: 70vh;
     background-color: $color-secondary;
     color: $color-primary;
+    font-family: $font-main;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    @media (width>480px){
+        flex-direction: row; 
+        flex-wrap: wrap;
+        align-items:center;
+       
+    }
+
+
+}
+
+.grid{
     display: grid;
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr 2fr 2fr 2fr 2fr 1fr;
-    gap: 15px;
-    font-family: $font-main;
-    
+    grid-template-rows: 1fr 1fr 1fr 1fr ;
+    gap: 10px;
+    @media (width>480px){
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+ 
+    }
+ 
 }
 
 .article{
@@ -18,8 +36,7 @@
     justify-content: left;
     align-items: center;
     gap: 10px;
-    
-    
+ 
 }
 
 .icono{
@@ -29,11 +46,5 @@
 }
 .titulo-white{
     text-align: center;
-
-}
-
-@media (width>480px){
    
-   
-    
 }

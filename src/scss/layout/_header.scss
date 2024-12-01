@@ -7,14 +7,25 @@
     position: sticky;
     top: 0;
     left: 0;
+    @media (width>480px){
+        height: 60px;
+        }
 }
 .nav{
     height: 100%;
  }
 .menu{
     display: none;
-    font-family: $font-main;
+    @include text_funcions ();
     font-size: 12px;
+    @media (width>480px){
+        height: 90%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: white;
+        gap: 20px;
+        }
 }
 
 .logo1{
@@ -22,24 +33,8 @@
 
 }
 .logo2{
-  
     height: 90%;
-}
-@media (width>480px){
-    .menu{
-        height: 90%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        color: white;
-        gap: 20px;
-        
-        
-    }
-    .logo2{
+    @media (width>480px){
         display: none;
-    }
-    .header{
-        height: 60px;
-    }
+        }
 }
