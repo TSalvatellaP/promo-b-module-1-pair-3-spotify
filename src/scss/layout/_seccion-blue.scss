@@ -14,9 +14,11 @@
     font-weight: bold;
     color: $color-secondary;
     @media (width>480px){
+      background-image: url(../images/premium_dancer.png);
+      background-repeat: no-repeat;
+      background-position: right;
       flex-wrap: wrap;
-      padding: 0;
-            
+                 
     }
 }
 .image-dancer{
@@ -55,4 +57,5 @@
     color: $color-secondary;
   
   }
+ 
 
