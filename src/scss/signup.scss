@@ -7,6 +7,7 @@
     margin-bottom: 100px;
     margin-left: 50px;
     margin-right: 50px;
+    @include text_funcions();
 }
 .header_form{
     height: 20px;
@@ -36,6 +37,7 @@
     justify-content: center;
     align-items: center;
     gap: 10px;
+    margin-top: 20px;
 
 }
 .button_facebook{
@@ -79,7 +81,7 @@
 .line{
     flex: 1;
     height: 1px;
-    background-color: $color-text;
+    color: $color-text; 
 }
 .circle {
     margin: 0 10px; 
@@ -87,20 +89,20 @@
     color: $color-text; 
   }
   .container_form{
-    
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
+    gap: 20px;
     
   }
   .form{
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    align-content: center;
-    gap: 15px
+    align-content: space-between;
+    gap: 10px;
   }
 
   .button_register{
@@ -108,6 +110,33 @@
     color: black;
     width: 125px;
     height: 40px;
-
     
+
   }
+  .birth{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 10px;
+
+  }
+  .gender{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 15px;
+
+  }
+.submit{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.link_form{
+    text-decoration: none;
+    color: $color-buttom;
+}

@@ -16,107 +16,104 @@
        <section class="register">
         <h4>Regístrate gratis para escuchar.</h4>
         <button class="button_facebook">
-          <img class="facebook" src="/images/facebook.png" alt="facebook">
-            
+          <img class="facebook" src="/images/facebook.png" alt="facebook"> 
             Registrarte con Facebook
         </button>
+
         <button class="button_google">
           <img class="google" src="/images/google.png" alt="google">
           Registrarte con Google
         </button>
        </section>
+
        <div class="separator-container"> 
         <div class="line"></div>
         <div class="circle">o</div>
         <div class="line"></div>
-       
       </div>
 
        <section class="container_form">
-        <h4>Registrarte con tu correo electronico</h3>
+        <h5>Registrarte con tu correo electrónico</h5>
         
-        <form class="form" action="/signup" method="post">
+          <form action="https://dev.adalab.es/api/form" method="GET">
             
+            <div class="form">
+              <label for="emailAddress"><h6>¿Cuál es tu correo electrónico?</h6></label>
+              <input
+              placeholder="Escribe aquí tu correo electrónico" type="email" id="emailAddress" name="emailAddress" />
+              <label for="emailAddress"><h6>Confirma tu correo electrónico</h6></label>
+              <input placeholder="Vuelve a escribir tu correo electrónico" type="email" id="emailAddress" name="emailAddress" />
+              <label for="password"><h6>Crea una contraseña</h6></label>
+              <input placeholder="Crea una contraseña" type="password" id="password" name="password" />
+              
+              <label for="nick"><h6>¿Cómo quieres qué te llamemos?</h6></label>
+              <input placeholder="Pon un nombre de perfil" type="nick" id="nick" name="nick" />
+              <label  for="comments"><h6>¿Cuál es tu fecha de nacimiento?</h6></label>
+              
+                <div class="birth">
+                <textarea placeholder="DD" type="number" id="comments" name="comments" rows="2" cols="5"></textarea>
+                <textarea placeholder="Mes" type="number" id="comments" name="comments" rows="2" cols="15"></textarea>
+                <textarea placeholder="AAAA" type="number" id="comments" name="comments" rows="2" cols="10"></textarea>
+              </div>
+                <h6>¿Cuál es tu género?</h6>
+                <div class="gender">
+              
+                    <label for="woman">
+                    <input
+                      id="woman"
+                      type="checkbox"
+                      value="woman"
+                      name="woman"
+                    />
+                    Woman
+                    </label>
+              
+                  <label for="men">
+                    <input
+                      id="men"
+                      type="checkbox"
+                      value="men"
+                      name="men"
+                    />
+                    Men
+                  </label>
+              
+                  <label for="nonbinary">
+                    <input
+                      id="nonbinary"
+                      type="checkbox"
+                      value="nonbinary"
+                      name="nonbinary"
+                      />
+                    No binario
+                  </label>
+              
+                 </div>
+                <label for="news">
+                  <input
+                    id="news"
+                    type="checkbox"
+                    value="news"
+                    name="news"
+                  />
+                Quiero que me enviéis novedades y ofertas de Spotify
+                </label>
+              
+                <label for="info">
+                  <input
+                    id="info"
+                    type="checkbox"
+                    value="info"
+                    name="info"
+                  />
+                Compartir ims datos de registro con los proveedores de contenidos de Spotify para fines de marketing. Ten en cuenta que tus datos pueden ser transferidos a un país de fuera del EEE, tal y como se recoge en nuestra Política de Privacidad.
+                </label>
+            </div>
            
-            <label for="emailAddress">¿Cuál es tu correo electrónico?</label>
-            <input type="email" id="emailAddress" name="emailAddress" />
-
-            <label for="emailAddress">Confirma tu correo electrónico</label>
-            <input type="email" id="emailAddress" name="emailAddress" />
-
-            <label for="password">Crea una contraseña</label>
-            <input type="password" id="password" name="password" />
-            
-            <label for="telephone">Teléfono</label>
-            <input type="tel" id="telephone" name="telephone" />
-
-            <label  for="comments">¿Cuál es tu fecha de nacimiento?</label>
-<textarea id="comments" name="comments" rows="1" cols="10"></textarea>
-<textarea id="comments" name="comments" rows="1" cols="10"></textarea>
-<textarea id="comments" name="comments" rows="1" cols="10"></textarea>
-
-<h3>¿Cuál es tu género?</h3>
-<div>
-  <label for="woman">
-    <input
-      id="woman"
-      type="checkbox"
-      value="woman"
-      name="woman"
-    />
-   Woman
-  </label>
-</div>
-<div>
-  <label for="men">
-    <input
-      id="men"
-      type="checkbox"
-      value="men"
-      name="men"
-    />
-    Men
-  </label>
-</div>
-<div>
-  <label for="nonbinary">
-    <input
-      id="nonbinary"
-      type="checkbox"
-      value="nonbinary"
-      name="nonbinary"
-      />
-    No binario
-  </label>
-  
-
-</div>
-<div>
-  <label for="news">
-    <input
-      id="news"
-      type="checkbox"
-      value="news"
-      name="news"
-    />
-   Quiero que me enviéis novedades y ofertas de Spotify
-  </label>
-</div>
-<div>
-  <label for="info">
-    <input
-      id="info"
-      type="checkbox"
-      value="info"
-      name="info"
-    />
-   Compartir ims datos de registro con los proveedores de contenidos de Spotify para fines de marketing. Ten en cuenta que tus datos pueden ser transferidos a un país de fuera del EEE, tal y como se recoge en nuestra Política de Privacidad.
-  </label>
-</div>
-
-
-           <button class="button_register">Registrarte</button>
-           <h6>¿Ya tienes cuenta? <a href="">Inicia sesión</a></h6>
+            <div class="submit">
+              <button class="button_register"><h6>Registrarte</h6></button>
+              <h6>¿Ya tienes cuenta? <a class="link_form" href="">Inicia sesión</a></h6>
+            </div>
           </form>
         </section>
         
