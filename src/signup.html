@@ -4,23 +4,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    
     <link rel="stylesheet" href="./scss/signup.scss">
     <link rel="stylesheet" href="https://www.flaticon.es/iconos">
 </head>
-<body>
-    <header>
-        <img class="logo" src="/images/logo negro.png" alt="">
+<body class="body_form">
+    <header class="header_form">
+        <img class="logo_black" src="/images/logo negro.png" alt="">
     </header>
-    <main>
-       <section>
-        <h1>Regístrate gratis para escuchar.</h1>
-        <button>Registrarte con FAcebook</button>
-        <button>Registrarte con Google</button>
+    <main class="main_form">
+       <section class="register">
+        <h4>Regístrate gratis para escuchar.</h4>
+        <button class="button_facebook">
+          <img class="facebook" src="/images/facebook.png" alt="facebook">
+            
+            Registrarte con Facebook
+        </button>
+        <button class="button_google">
+          <img class="google" src="/images/google.png" alt="google">
+          Registrarte con Google
+        </button>
        </section>
+       <div class="separator-container"> 
+        <div class="line"></div>
+        <div class="circle">o</div>
+        <div class="line"></div>
+       
+      </div>
 
        <section>
+        
         <form action="/signup" method="post">
-           
+            <h4>Registrarte con tu correo electronico</h3>
            
             <label for="emailAddress">¿Cuál es tu correo electrónico?</label>
             <input type="email" id="emailAddress" name="emailAddress" />

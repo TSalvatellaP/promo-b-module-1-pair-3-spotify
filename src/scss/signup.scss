@@ -1,0 +1,91 @@
+
+@import 'core/variables';
+@import 'core/reset';
+@import "core/mixins";
+.body_form{
+    margin-top: 20px;
+    margin-bottom: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.header_form{
+    height: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+    margin-top: 20px;
+
+}
+
+.logo_black{
+    height: 100%;
+}
+
+.main_form{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 2fr 1fr 4fr 1fr ;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    
+}
+.register{
+    height: 60px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    justify-items: center;
+    gap: 10px;
+    text-align: center;
+    font-size: 14px;
+
+}
+.button_facebook{
+    @include button_funtions();
+    height: 30px;
+    width: 80%;
+    background-color: #435B8E;
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    gap: 10px;
+    
+
+}
+.facebook{
+    height: 200%;
+}
+
+.button_google{
+    @include button_funtions();
+    height: 30px;
+    width: 80%;
+    background-color:white;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: row;
+    justify-items: left;
+    gap: 10px;
+    color: black;
+ 
+}
+.google{
+    height: 200%;
+}
+.separator-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0; 
+  }
+.line{
+    flex: 1;
+    height: 1px;
+    background-color: $color-text;
+}
+.circle {
+    margin: 0 10px; 
+    font-size: 14px;
+    color: $color-text; 
+  }
