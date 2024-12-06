@@ -3,3 +3,18 @@
     line-height: 1.25;
 
 }
+
+@mixin button_funtions(){
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    background-color: $color-buttom;
+    height: 50px;
+    border-radius: 25px;
+    border-style: none;
+    text-decoration: none;
+    color: $color-secondary;
+
+}
