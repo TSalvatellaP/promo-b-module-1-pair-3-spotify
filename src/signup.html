@@ -32,10 +32,11 @@
        
       </div>
 
-       <section>
+       <section class="container_form">
+        <h4>Registrarte con tu correo electronico</h3>
         
-        <form action="/signup" method="post">
-            <h4>Registrarte con tu correo electronico</h3>
+        <form class="form" action="/signup" method="post">
+            
            
             <label for="emailAddress">¿Cuál es tu correo electrónico?</label>
             <input type="email" id="emailAddress" name="emailAddress" />
@@ -49,7 +50,7 @@
             <label for="telephone">Teléfono</label>
             <input type="tel" id="telephone" name="telephone" />
 
-            <label for="comments">¿Cuál es tu fecha de nacimiento?</label>
+            <label  for="comments">¿Cuál es tu fecha de nacimiento?</label>
 <textarea id="comments" name="comments" rows="1" cols="10"></textarea>
 <textarea id="comments" name="comments" rows="1" cols="10"></textarea>
 <textarea id="comments" name="comments" rows="1" cols="10"></textarea>
@@ -87,16 +88,38 @@
       />
     No binario
   </label>
+  
 
+</div>
+<div>
+  <label for="news">
+    <input
+      id="news"
+      type="checkbox"
+      value="news"
+      name="news"
+    />
+   Quiero que me enviéis novedades y ofertas de Spotify
+  </label>
+</div>
+<div>
+  <label for="info">
+    <input
+      id="info"
+      type="checkbox"
+      value="info"
+      name="info"
+    />
+   Compartir ims datos de registro con los proveedores de contenidos de Spotify para fines de marketing. Ten en cuenta que tus datos pueden ser transferidos a un país de fuera del EEE, tal y como se recoge en nuestra Política de Privacidad.
+  </label>
 </div>
 
 
-           <button>Registrarte</button>
+           <button class="button_register">Registrarte</button>
+           <h6>¿Ya tienes cuenta? <a href="">Inicia sesión</a></h6>
           </form>
         </section>
-        <div>
-            <h3>¿Ya tienes cuenta? <a href="">Inicia sesión</a></h3>
-        </div>
+        
    
 
     </main>
