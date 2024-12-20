@@ -1,69 +1,118 @@
 <!DOCTYPE html>
-<html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify</title>
     
-    <link rel="icon" href="./images/favicon.png" />
-    <link rel="stylesheet" href="./assets/main-62015576.css">
-  </head>
-
-  <body>
-    <div class="page">
-      <header class="page__header">
-  <img src="./images/logo-adalab.png" alt="Adalab">
-  <h1>Bienvenidos a Adalab</h1>
+    
+  <link rel="stylesheet" href="./assets/index-46dc6917.css">
+</head>
+<body>
+    <header class="header">
+    <img src="./images/logo.png" alt="logo spoty" class="logo1">
+    <nav class="nav">
+        
+        <img src="./images/menu-icon.png" alt="hamb" class="logo2">
+         
+       <div class="menu">     
+            <spa>Premium</spa>
+            <spa>Ayuda</spa>
+            <spa>Descargar</spa>
+            <span>|</span>
+            <spa><a href="./signup.html">Registrarte</a></spa>
+            <spa>Inicisar Sesión</spa>
+        </div> 
+       
+    </nav>
+        
 </header>
+    <main>
+        <section class="container">
+       
+    <div>
+        <h1> Prueba Premium gratis 3 meses </h1>
+    </div>
 
-      <main class="page__main">
-  <h2>Este es el starter kit de Adalab</h2>
-  <p>Lo usamos para aprender:</p>
-  <ul class="main__list">
-    <li>Sass</li>
-    <li>HTML partials</li>
-    <li>Gulp</li>
-    <li>y muchas cosas más</li>
-  </ul>
-  <p>Si quieres saber cúales son las rutas correctas para:</p>
-  <ul class="main__list">
-    <li>
-      una <code class="code">&lt;img /&gt;</code> mira el fichero
-      <code class="code">./src/html/partials/header.html</code>.
-    </li>
-    <li>
-      y para un <code class="code">background-image</code> mira el fichero
-      <code class="code">./src/html/scss/layout/_page.scss</code>.
-    </li>
-  </ul>
-  <p>
-    Si quieres saber cómo usar un partial HTML dentro de otro partial, busca en la carperta
-    <code class="code">./src/html/index.html</code> y
-    <code class="code">./src/html/partials/main.html</code>, y verás cómo estamos creando estos
-    enlaces:
-  </p>
-  <ul class="main__list">
-    <li>
-      <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    <div>
+        <h2> Escucha millones de canciones sin anuncios, a la carta y sin conexión 
+        </h2>
+    </div>
 
-    </li>
-    <li>
-      <a class="{=$aClass}" href="./more-info.html">Más info del starter kit</a>
+    <div>
+        <button class="button">
+            <a class="text-button" href=""><h4>VER PLANES</h4></a>
+            
+        </button>
+    </div>
 
-    </li>
-  </ul>
-</main>
+    <div>
+        <h6> Rigen términos y condiciones. Los tres meses gratis no están disponibles para usuarios que ya hayan probado Premium </h6>
+    </div>
+     
+</section>
+        <section class="section-white">
+    <h2 class="titulo-white">¿Por que pasarte a premium?</h2>
 
-      <footer class="page__footer">
-  <small>
-    &copy; Todos los derechos reservados
-    <a class="link__adalab" href="https://adalab.es">Adalab</a>
+    <div class="grid">
+    <article class="article">
+        <div>
+            <h4>Descarga musica</h4>
+            <p> Llevala siempre contigo</p>
+        </div>
+        <img class="icono" src="./images/benefit-1.png" alt="">
+    </article>
 
-  </small>
-</footer>
+    <article class="article">
+        <div>
+            <h4>Sin anuncios</h4>
+            <p>Disfruta de musica sin interrupciones</p>
+        </div>
+        <img class="icono" src="./images/benefit-2.png" alt="">
+
+    </article>
+
+    <article class="article">
+        <div>
+            <h4>Escucha lo que quieras</h4>
+            <p>Incluso en el movil</p>
+        </div>
+        <img class="icono" src="./images/benefit-3.png" alt="">
+    </article>
+
+    <article class="article">
+        <div>
+            <h4>Salta todas las canciones que quieras</h4>
+            <p>Simplemente dale a siguiente</p>
+        </div>
+        <img class="icono" src="./images/benefit-4.png" alt="">
+    </article>
+    </div>
+
+</section>
+        
+
+       
+    </main>
+    <footer>
+    <nav>
+        <ul class="menu-footer">
+            <li>Legal</li>
+            <li>Cookies</li>
+            <li>Información sobre los anuncios</li>
+        </ul>
+    </nav>
+
+    <div class="copy">
+        <h6>España</h6>
+        <img class="logo-sp" src="./images/es.svg" alt="">
+        <p>copyright</p>
 
     </div>
-    <script src="./js/main.js"></script>
-  </body>
+
+</footer>
+   
+
+   
+</body>
 </html>
