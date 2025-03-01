@@ -1,125 +1,93 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+# Proyecto Spotify - Frontend
 
-# Adalab web starter kit
+Este proyecto es una implementación frontend de una página web inspirada en Spotify. El proyecto está estructurado para ser modular y mantenible, utilizando HTML, SCSS y posiblemente JavaScript.
 
-Ahoy! Este es nuestro Starter Kit creado en **node y vite**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
+## Estructura de Carpetas
+´´´
+├── partials/
+│   ├── footer.html
+│   ├── header.html
+│   ├── seccion-blue.html
+│   └── seccion-white.html
+├── scss/
+│   ├── components/
+│   │   ├── _code.scss
+│   │   └── _links.scss
+│   ├── core/
+│   │   ├── _mixins.scss
+│   │   ├── _reset.scss
+│   │   └── _variables.scss
+│   ├── layout/
+│   │   ├── _footer.scss
+│   │   ├── _header.scss
+│   │   ├── _seccion-blue.scss
+│   │   └── _seccion-white.scss
+│   └── pages/
+│       ├── main.scss
+│       └── signup.scss
+├── index.html
+├── signup.html
+├── .eslintrc.json
+├── .gitignore
+└── desktop.jpg
+´´´
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+## Descripción de Carpetas y Archivos
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+### `partials/`
 
-- Los ficheros que están sueltos en la raíz del repositorio, como vite.config.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos (excepto este README.md, para describir tu proyecto).
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- La carpeta `public/`, que tiene fichero estáticos como imágenes, fuentes, favicon, librerías de JavaScript antiguas (jQuery, ...)
-- Y la carpeta `docs/`, que es generada automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/` y `public/`, los procesa y los genera dentro de `public/` y `docs/`.
+Contiene fragmentos HTML reutilizables para diferentes secciones de la página.
 
-## Guía de inicio rápido
+* `footer.html`: HTML para el pie de página.
+* `header.html`: HTML para la cabecera.
+* `seccion-blue.html`: HTML para una sección con fondo azul.
+* `seccion-white.html`: HTML para una sección con fondo blanco.
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) con una versión superior a la 14 para trabajar con este Starter Kit:
+### `scss/`
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+Contiene archivos SCSS para la estilización del proyecto.
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos** que comienzan por un punto.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+* `components/`: Estilos para componentes UI reutilizables.
+    * `_code.scss`: Estilos para bloques de código.
+    * `_links.scss`: Estilos para enlaces.
+* `core/`: Archivos SCSS fundamentales.
+    * `_mixins.scss`: Mixins SCSS reutilizables.
+    * `_reset.scss`: Estilos para resetear o normalizar estilos CSS.
+    * `_variables.scss`: Variables SCSS para colores, fuentes, etc.
+* `layout/`: Estilos para el layout general de la página.
+    * `_footer.scss`: Estilos para el pie de página.
+    * `_header.scss`: Estilos para la cabecera.
+    * `_seccion-blue.scss`: Estilos para la sección azul.
+    * `_seccion-white.scss`: Estilos para la sección blanca.
+* `pages/`: Estilos específicos para páginas.
+    * `main.scss`: Estilo principal para la página principal.
+    * `signup.scss`: Estilos para la página de registro.
 
-```bash
-npm install
-```
+### Archivos Raíz
 
-### Pasos para arrancar el proyecto:
+* `index.html`: Página principal del sitio.
+* `signup.html`: Página de registro.
+* `.eslintrc.json`: Configuración para ESLint (linter de JavaScript).
+* `.gitignore`: Archivo para especificar archivos y carpetas que Git debe ignorar.
+* `desktop.jpg`: Imagen de fondo o imagen principal.
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+## Uso
 
-```bash
-npm run dev
-```
+1.  Asegúrate de tener un compilador de SCSS instalado (por ejemplo, `node-sass` o `sass`).
+2.  Compila los archivos SCSS a CSS usando tu compilador preferido.
+3.  Abre `index.html` en tu navegador para ver la página principal.
 
-Este comando:
+## Contribución
 
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+Si deseas contribuir a este proyecto, sigue estos pasos:
 
-Después de ejecutar `npm run dev` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
+1.  Haz un fork del repositorio.
+2.  Crea una rama para tu contribución (`git checkout -b feature/nueva-caracteristica`).
+3.  Realiza tus cambios.
+4.  Haz commit de tus cambios (`git commit -m 'Añade nueva característica'`).
+5.  Sube tus cambios a tu fork (`git push origin feature/nueva-caracteristica`).
+6.  Crea un pull request.
 
-### Pasos para publicar el proyecto en GitHub Pages:
+## Licencia
 
-Para generar tu página para producción ejecuta el comando:
-
-```bash
-npm run build
-```
-
-Y a continuación:
-
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
-
-Además, los comandos:
-
-```bash
-npm run push-docs
-```
-o
-
-```bash
-npm run deploy
-```
-
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
-<!--
-## Flujo de archivos con Gulp
-
-Estas tareas de Gulp producen el siguiente flujo de archivos:
-
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
--->
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-<!--
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
--->
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+Este proyecto está bajo la licencia [MIT](LICENSE).
