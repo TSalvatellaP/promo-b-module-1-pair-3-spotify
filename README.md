@@ -3,7 +3,7 @@
 Este proyecto es una implementación frontend de una página web inspirada en Spotify. El proyecto está estructurado para ser modular y mantenible, utilizando HTML, SCSS y posiblemente JavaScript.
 
 ## Estructura de Carpetas
-´´´
+```
 ├── partials/
 │   ├── footer.html
 │   ├── header.html
@@ -30,7 +30,7 @@ Este proyecto es una implementación frontend de una página web inspirada en Sp
 ├── .eslintrc.json
 ├── .gitignore
 └── desktop.jpg
-´´´
+```
 
 ## Descripción de Carpetas y Archivos
 
